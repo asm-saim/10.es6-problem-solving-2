@@ -27,3 +27,27 @@ console.log(calculateShipping(500, 100));
   Example: getGrade(82) -> "A"
   Example: getGrade(45) -> "Fail"
 */
+const getGrade = (number) => {
+  //   if (typeof number !== "number") {
+  //     return "Invalid";
+  //   }
+  //   if (number >= 90) {
+  //     return "A+";
+  //   } else if (number >= 80) {
+  //     return "A";
+  //   } else if (number >= 60) {
+  //     return "B";
+  //   } else {
+  //     return "Fail";
+  //   }
+  return typeof number !== "number"
+    ? "Invalid"
+    : number >= 90
+      ? "A+"
+      : number >= 80
+        ? "A"
+        : number >= 60
+          ? "B"
+          : "Fail";
+};
+console.log(getGrade(90));
